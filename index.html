@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+    <header class="header">
+      <h1 id="title">Survey From Clarusway</h1>
+      <p id="description">
+        Thank you for taking the time to help us to improve the plateform
+      </p>
+    </header>
+    <form action="" id="survey-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="formControl"
+          placeholder="Enter your name"
+          required
+        />
+      </div><br>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="formControl"
+          placeholder="Enter your email"
+          required
+        />
+      </div><br>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input
+          type="number"
+          name="phone"
+          id="phone"
+          class="formControl"
+          placeholder="Enter your phone number"
+          required
+        />
+      </div><br>
+      <div class="form-group">
+        <label for="adress">Adress</label>
+        <input
+          type="text"
+          name="adress"
+          id="adress"
+          class="formControl"
+          placeholder="Enter your adress"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <p id="guest">Which option best describe your current role?</p>
+        <select name="role" id="dropdown" class="formControl" required>
+          <option value="" >select current role</option>
+          <option value="student">STUDENT</option>
+          <option value="teacher">Teacher</option>
+          <option value="job">Job</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p id="guest">How you come to know about Clarusway</p>
+        <label for="inputRadio"></label>
+        <input type="radio" name="source" id="inputRadio" value="friends" />
+        <label for="inputRadio">Friends</label>
+        <input type="radio" name="source" id="inputRadio" value="tv ads" />
+        <label for="inputRadio">TV Ads</label>
+        <input
+          type="radio"
+          name="source"
+          id="inputRadio"
+          value="social media"
+          checked
+        />
+        <label for="inputRadio">Social Media</label>
+        <input type="radio" name="source" id="inputRadio" value="newspaper" />
+        <label for="inputRadio">Newspaper</label>
+      </div>
+      <div class="form-group">
+        <p id="guest">Would you like to see improved</p>
+        <input type="checkbox" name="prefer" id="checkbox" value="app-dev" />
+        <label for="checkbox">Front-end-Developer</label><br>
+        <input
+          type="checkbox"
+          name="prefer"
+          id="checkbox"
+          value="app-dev"
+          checked
+        />
+        <label for="checkbox">Back-end-Developer</label><br>
+        <input type="checkbox" name="prefer" id="checkbox" value="app-dev" />
+        <label for="checkbox">Software Enginering</label><br>
+
+        <input type="checkbox" name="prefer" id="checkbox" value="app-dev" />
+        <label for="checkbox">Other</label>
+      </div>
+      <div class="form-group">
+        <p id="guest">Give us your feedback</p>
+        <textarea
+          name="feedback"
+          id="feedback"
+          cols="30"
+          rows="5"
+          placeholder="Enter your feedback here..."
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <button id="btn">Submit</button>
+      </div>
+    </form>
+    </div>
+  </body>
+</html>
